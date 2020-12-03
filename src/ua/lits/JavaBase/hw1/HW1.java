@@ -1,4 +1,4 @@
-package ua.lits.JavaBase.HW1;
+package ua.lits.JavaBase.hw1;
 
 public class HW1 {
     public static void main(String[] args) {
