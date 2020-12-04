@@ -1,4 +1,4 @@
-package ua.lits.JavaBase;
+package ua.lits.java_base;
 
 public class Main {
 

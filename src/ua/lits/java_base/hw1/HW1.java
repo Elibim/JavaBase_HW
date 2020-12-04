@@ -1,7 +1,7 @@
-package ua.lits.JavaBase.hw1;
+package ua.lits.java_base.hw1;
 
 public class HW1 {
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         System.out.println("1st part of homework 1 (check)");
         // Запрограмувати наступні формули:
         double a = 3, b = 4, c = 5;
