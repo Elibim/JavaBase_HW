@@ -1,9 +1,11 @@
 package ua.lits.java_base.hw3;
 
+import java.util.Random;
+
+
 public class Lesson3 {
     public static void main(String[] args) {
 
-// import java.util.Random;
 
 
 

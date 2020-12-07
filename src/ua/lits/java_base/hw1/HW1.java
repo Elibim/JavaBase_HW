@@ -4,7 +4,7 @@ public class HW1 {
     public static void main (String[] args) {
         System.out.println("1st part of homework 1 (check)");
         // Запрограмувати наступні формули:
-        double a = 3, b = 4, c = 5;
+        double a = 3, b = 4, c = 5, d = 19;
 
         // a+b-c*b;
         double result1 = (a + b - c * b);
