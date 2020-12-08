@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class HW3 {
 
-    public static boolean isPalindrom(String word) {
+    public static boolean isPalindrome(String word) {
         String reverse = "";
 
         for (int i = word.length() - 1; i >= 0; i--) {
@@ -69,28 +69,25 @@ public class HW3 {
     }
 
     public static void main(String[] args) {
-
         System.out.println("** 1st part of homework.");
-
+              //1. Написати реалізацію для методу
+              //Метод має визначати чи слово є паладром чи ні. hint: https://www.javatpoint.com/java-string-to-char
         String test1 = "levels";
         System.out.println(test1);
-        boolean result = isPalindrom(test1);
-        System.out.println("is Palindrom result: " + result);
+        boolean result = isPalindrome(test1);
+        System.out.println("is Palindrome result: " + result);
 
         String test2 = "level";
         System.out.println(test2);
-        boolean result1 = isPalindrom(test2);
-        System.out.println("is Palindrom result1: " + result1);
+        boolean result1 = isPalindrome(test2);
+        System.out.println("is Palindrome result1: " + result1);
 
-        System.out.println("");
-        System.out.println("** 2nd part of homework.");
+        System.out.println("\n** 2nd part of homework.");
                 //Створити  масив int[] a = new int[20]; Заповнити його рандомними числам за допомогою
                 // Random r = new Random();r.nextInt(47);
-
         final int size = 20;
         int[] a2 = new int[size];
         Random r = new Random();
-
         for (int i = 0; i < size; i++) {
             a2[i] = r.nextInt(47);
 //            System.out.println("a2[" + i + "] = " + a2[i]);
@@ -109,7 +106,7 @@ public class HW3 {
         System.out.println("max: " + max);
 
         System.out.println("* 2b)");
-        //    b. Знайти наменше число
+                //    b. Знайти наменше число
         int min = a2[0];
         for (int i = 0; i < size; i++) {
 //            System.out.println(min + " > " + a2[i]);
@@ -120,14 +117,13 @@ public class HW3 {
         System.out.println("min: " + min);
 
         System.out.println("* 2c)");
-        //    c. Зробити масив в протилежному напрямі
+                //    c. Зробити масив в протилежному напрямі
         for (int c1 = size -1; c1 >= 0; c1--) {
             System.out.print(a2[c1] + ", ");
         }
 
         System.out.println("\n* 2d)");
-        //    d. Знайти всі непарні елементи масиву
-
+                //    d. Знайти всі непарні елементи масиву
          for (int d1 = 0; d1 <= size -1; d1++) {
             if (a2[d1] % 2 == 0){
                 System.out.print(a2[d1] + ", ");
@@ -135,7 +131,7 @@ public class HW3 {
          }
 
         System.out.println("\n* 2e)");
-        //    e. Відсортувати масив любив відомим мав алгоритмом
+                //    e. Відсортувати масив любив відомим мав алгоритмом
         show(a2, size);
         int n = size;
         int swap = 0;
@@ -153,11 +149,7 @@ public class HW3 {
         System.out.println();
         show(a2, size);
 
-
-
-        System.out.println("");
-        System.out.println("** 3rd part of homework.");
-
+        System.out.println("\n** 3rd part of homework.");
         int[][] a3 = {
                 {1, 5, 7, 32, 65, 5, 23, 45, 75, 1},
                 {33, 44, 12, 32, 4, 5, 12, 3, 4, 1},
@@ -178,7 +170,7 @@ public class HW3 {
         }
 
         System.out.println("* 3a)");
-        // а. Вивести всі значення які вище діагоналі
+                // а. Вивести всі значення які вище діагоналі
         for (int x = 0; x <= 9 -1; x++) {
             for (int y = x + 1; y <= 9; y++) {
                 System.out.print(a3[x][y] + ", ");
@@ -187,29 +179,20 @@ public class HW3 {
         }
 
         System.out.println("* 3b)");
-        // b. вивести всі значення які нижче діагоналі
+                // b. вивести всі значення які нижче діагоналі
         for (int x = 1; x <= 9; x++) {
             for (int y = 0; y < x; y++) {
                 System.out.print(a3[x][y] + ", ");
             }
             System.out.println();
         }
-
-
-            System.out.println("");
-            System.out.println("** 4th part of homework.");
-
+        System.out.println("\n** 4th part of homework.");
+                //Switch реалізувати метод який буде приймати номер місяця і буде виводити "Я народився в Січні" якщо передали 1
+                //public void iWasBorn(int month) {
+                //
+                //}
             iWasBorn(1);
             iWasBorn(5);
 
-            //Switch реалізувати метод який буде приймати номер місяця і буде виводити "Я народився в Січні" якщо передали 1
-            //public void iWasBorn(int month) {
-            //
-            //}
-
         }
-//1. Написати реалізацію для методу
-//Метод має визначати чи слово є паладром чи ні. hint: https://www.javatpoint.com/java-string-to-char
-
-
     }
