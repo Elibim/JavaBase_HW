@@ -69,9 +69,10 @@ public class HW3 {
     }
 
     public static void main(String[] args) {
+
         System.out.println("** 1st part of homework.");
-              //1. Написати реалізацію для методу
-              //Метод має визначати чи слово є паладром чи ні. hint: https://www.javatpoint.com/java-string-to-char
+        //1. Написати реалізацію для методу
+        //Метод має визначати чи слово є паладром чи ні. hint: https://www.javatpoint.com/java-string-to-char
         String test1 = "levels";
         System.out.println(test1);
         boolean result = isPalindrome(test1);
@@ -92,7 +93,7 @@ public class HW3 {
             a2[i] = r.nextInt(47);
 //            System.out.println("a2[" + i + "] = " + a2[i]);
             System.out.print(a2[i] + ", ");
-           }
+        }
 
             System.out.println("\n* 2a)");
 //           а. Знайти набільше число
@@ -149,7 +150,8 @@ public class HW3 {
         System.out.println();
         show(a2, size);
 
-        System.out.println("\n** 3rd part of homework.");
+        System.out.println("\n");
+        System.out.println("** 3rd part of homework.");
         int[][] a3 = {
                 {1, 5, 7, 32, 65, 5, 23, 45, 75, 1},
                 {33, 44, 12, 32, 4, 5, 12, 3, 4, 1},
@@ -186,11 +188,13 @@ public class HW3 {
             }
             System.out.println();
         }
+
         System.out.println("\n** 4th part of homework.");
                 //Switch реалізувати метод який буде приймати номер місяця і буде виводити "Я народився в Січні" якщо передали 1
                 //public void iWasBorn(int month) {
                 //
                 //}
+
             iWasBorn(1);
             iWasBorn(5);
 
