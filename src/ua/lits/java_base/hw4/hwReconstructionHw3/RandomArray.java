@@ -75,7 +75,4 @@ public class RandomArray {
         System.out.println();
         show(a2, size);
     }
-
-
-
 }
