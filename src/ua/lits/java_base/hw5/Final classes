@@ -1,0 +1,31 @@
+Find final classes in JDK.
+
+According to w3school.com:
+Non - access modifiers for classes are:
+    final,
+    abstract.
+
+/*
+For remembering:
+Access modifiers for classes are:
+    public,
+    'default'.
+Non - access modifiers for classes are:
+    final,
+    abstract.
+
+Access modifiers for attributes, methods and constructors are:
+    public,
+    privat,
+    'default',
+    protected.
+Non - access modifiers for attributes and methods are:
+    final,
+    static,
+    abstract,
+    transient,
+    synchronized,
+    volatile.
+
+https://www.w3schools.com/java/java_modifiers.asp
+*/
