@@ -21,6 +21,24 @@ public class Main {
         spaceX2c.show();
         spaceX2Mars.show();
 
+        System.out.println("\n *** ---Additional homework 5--- ***");
 
+        Additional_hw5 additional_hw5 = new Additional_hw5();
+        int[] array = additional_hw5.generateRandomArrayOfSize(100);
+
+        additional_hw5.showRandomArray(array, 100);
+
+        System.out.println("\n* вивести суму всіх непарних індексів масиву");
+        additional_hw5.showSumOfOddIndex(array, 100);
+
+        System.out.println("\n* вивести всі кратні 2,3,5");
+        additional_hw5.showMultiplesOf2_3_5(array, 100);
+
+        System.out.println("\n* вивести середнє значення всіх парних/непарних елементів");
+        additional_hw5.showAverageOfOddElements(array, 100);
+        additional_hw5.showAverageOfEvenElements(array, 100);
+
+//        System.out.println("знайти нск в масиві");
+//        additional_hw5.showLcmExample();
     }
 }
