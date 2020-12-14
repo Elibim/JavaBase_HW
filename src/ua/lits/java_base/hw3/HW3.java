@@ -126,7 +126,7 @@ public class HW3 {
         System.out.println("\n* 2d)");
                 //    d. Знайти всі непарні елементи масиву
          for (int d1 = 0; d1 <= size -1; d1++) {
-            if (a2[d1] % 2 == 0){
+            if (a2[d1] % 2 != 0){
                 System.out.print(a2[d1] + ", ");
             }
          }

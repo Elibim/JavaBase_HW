@@ -51,7 +51,7 @@ public class RandomArray {
 
     public void printEven(int[] a2, int size) {
         for (int d1 = 0; d1 <= size -1; d1++) {
-            if (a2[d1] % 2 == 0){
+            if (a2[d1] % 2 != 0){
                 System.out.print(a2[d1] + ", ");
             }
         }
