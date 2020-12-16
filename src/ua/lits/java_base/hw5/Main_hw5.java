@@ -1,6 +1,6 @@
 package ua.lits.java_base.hw5;
 
-public class Main {
+public class Main_hw5 {
 
     public static void main(String[] args) {
 

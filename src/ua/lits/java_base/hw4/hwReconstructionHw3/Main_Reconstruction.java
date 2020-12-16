@@ -1,6 +1,6 @@
 package ua.lits.java_base.hw4.hwReconstructionHw3;
 
-public class Main {
+public class Main_Reconstruction {
     public static void main(String[] args) {
 
       System.out.println("** 1st part of homework.");
