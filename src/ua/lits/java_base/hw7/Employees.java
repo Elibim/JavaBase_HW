@@ -1,15 +1,21 @@
 package ua.lits.java_base.hw7;
 
 public class Employees {
-    Actions feeding = Actions.FEEDING;
-    Actions actions = Actions.CLEANING;
-    Actions counting = Actions.COUNTING;
 
     public String employee;
-    public Actions action;
+    public Action action;
 
-    public Employees(String employee, Actions action) {
+    public Employees(String employee, Action action) {
         this.employee = employee;
         this.action = action;
+    }
+
+    public void doSomething() {
+        System.out.println(employee + " is " + action + ".");
+    }
+
+    public void income() {
+        System.out.println("  " + Visitor.visitorNo + " * " + Visitor.price + " = " +
+                Visitor.visitorNo * Visitor.price + "\n  Its today's income.");
     }
 }

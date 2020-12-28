@@ -1,19 +1,21 @@
 package ua.lits.java_base.hw7;
 
-public class Visitors {
-    public Actions entering = Actions.ENTERING;
-    public Actions paying = Actions.PAYING;
-    public Actions leaving = Actions.LEAVING;
+public class Visitor {
+    static int visitorNo = 0;
+    public static int price;
+    public Action entering = Action.ENTERING;
+    public Action paying = Action.PAYING;
+    public Action leaving = Action.LEAVING;
 
     public String visitor;
-    public int price;
 
-    public Visitors(String visitor, int price) {
+    public Visitor(String visitor, int price) {
         this.visitor = visitor;
-        this.price = price = 100;
+        Visitor.price = price;
+        visitorNo++;
     }
 
-    public void showVisitorEnteranceAndPay() {
+    public void showVisitorEntranceAndPay() {
         System.out.println(
                 "* " + visitor + " is " + entering + " the ZOO and " + paying + " for entrance ticket.");
     }

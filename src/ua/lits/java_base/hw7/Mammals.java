@@ -1,18 +1,20 @@
 package ua.lits.java_base.hw7;
 
-public class Mammals {
-    public String name;
-    public int number_of_female;
-    public int number_of_male;
+abstract class Mammals {
 
-    public Mammals(String name, int number_of_female, int number_of_male) {
-        this.name = name;
-        this.number_of_female = number_of_female;
-        this.number_of_male = number_of_male;
+    public Action feeding = Action.FEEDING;
+
+    abstract String sort();
+    abstract int noOfAnimal();
+    abstract FoodType foodType();
+    abstract FeederName feeder();
+
+    public void print(){
+        System.out.println("In the ZOO there are " + noOfAnimal() + " of " + sort() + "." + "\nThey are " +
+                foodType() + "." + "\n" + feeder() + " is " + feeding + " them.");
     }
 
-    public void showMammals() {
-        System.out.println("In the ZOO there are " + name + ", " + number_of_female +
-                " pcs of female and " + number_of_male + " of male.");
+    public void feederFeed() {
+        System.out.println(feeder() + " is " + feeding + " " + sort() + ".");
     }
 }

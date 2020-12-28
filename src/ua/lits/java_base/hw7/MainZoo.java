@@ -21,36 +21,63 @@ public class MainZoo {
 //  Вартість входу 100 грн.
 //  В програмі обовязково використати Інтерфейси, абстрактні класи, енами
 
-        Birds peacock = new Birds("peacocks", 14, 9);
-        peacock.showBirds();
-        Birds eagle = new Birds("eagles", 4, 4);
-        eagle.showBirds();
-        Birds owl = new Birds("owls", 6, 4);
-        owl.showBirds();
-        Mammals lion = new Mammals("lions", 5, 2);
-        lion.showMammals();
-        Mammals kangaroo = new Mammals("kangaroos", 18, 19);
-        kangaroo.showMammals();
-        Mammals camel = new Mammals("camels", 3, 2);
-        camel.showMammals();
+        System.out.println("-------");
+//        Bird peacock = new Peacock(); /* peacock.print is not working with interface? */
+        Peacock peacock = new Peacock();
+        Eagle eagle = new Eagle();
+        Toucan toucan = new Toucan();
+
+        peacock.print();
+        System.out.println("-------");
+        eagle.print();
+        System.out.println("-------");
+        toucan.print();
+        System.out.println("-------");
+
+        Mammals hedgehog = new Hedgehog();
+        Alpaca alpaca = new Alpaca();
+        Wolf wolf = new Wolf();
+
+        hedgehog.print();
+        System.out.println("-------");
+        alpaca.print();
+        System.out.println("-------");
+        wolf.print();
 
         System.out.println("\n--- The ZOO is opening. ---");
 
-        Visitors visitor1 = new Visitors("First visitor", 100);
-        visitor1.showVisitorEnteranceAndPay();
-        Visitors visitor2 = new Visitors("Second visitor", 100);
-        visitor2.showVisitorEnteranceAndPay();
-        Visitors visitor3 = new Visitors("Third visitor", 100);
-        visitor3.showVisitorEnteranceAndPay();
-        Visitors visitor4 = new Visitors("Fourth visitor", 100);
-        visitor4.showVisitorEnteranceAndPay();
+        Visitor visitor1 = new Visitor("First visitor", 100);
+        visitor1.showVisitorEntranceAndPay();
+        Visitor visitor2 = new Visitor("Second visitor", 100);
+        visitor2.showVisitorEntranceAndPay();
+        Visitor visitor3 = new Visitor("Third visitor", 100);
+        visitor3.showVisitorEntranceAndPay();
+        Visitor visitor4 = new Visitor("Fourth visitor", 100);
+        visitor4.showVisitorEntranceAndPay();
+
+        peacock.feederFeed();
+        eagle.feederFeed();
+        toucan.feederFeed();
+        hedgehog.feederFeed();
+        alpaca.feederFeed();
+        wolf.feederFeed();
 
         System.out.println("\n--- It's lunch time. ---");
 
-        Visitors visitor5 = new Visitors("Fifth visitor", 100);
-        visitor5.showVisitorEnteranceAndPay();
-        Visitors visitor6 = new Visitors("Sixth visitor", 100);
-        visitor6.showVisitorEnteranceAndPay();
+        Visitor visitor5 = new Visitor("Fifth visitor", 100);
+        visitor5.showVisitorEntranceAndPay();
+        Visitor visitor6 = new Visitor("Sixth visitor", 100);
+        visitor6.showVisitorEntranceAndPay();
+
+        peacock.feederFeed();
+        eagle.feederFeed();
+        toucan.feederFeed();
+        hedgehog.feederFeed();
+        alpaca.feederFeed();
+        wolf.feederFeed();
+
+        Employees cleaner = new Employees("Cleaner", Action.CLEANING);
+        cleaner.doSomething();
 
         System.out.println("\n--- The ZOO is closing");
 
@@ -60,5 +87,16 @@ public class MainZoo {
         visitor4.showVisitorLeaving();
         visitor5.showVisitorLeaving();
         visitor6.showVisitorLeaving();
-    }
+
+        peacock.feederFeed();
+        eagle.feederFeed();
+        toucan.feederFeed();
+        hedgehog.feederFeed();
+        alpaca.feederFeed();
+        wolf.feederFeed();
+        cleaner.doSomething();
+        Employees accountant = new Employees("Accountant", Action.COUNTING);
+        accountant.doSomething();
+        accountant.income();
+        }
 }

@@ -1,6 +1,6 @@
 package ua.lits.java_base.hw7;
 
-public enum Actions {
+public enum Action {
     ENTERING,
     PAYING,
     FEEDING,
