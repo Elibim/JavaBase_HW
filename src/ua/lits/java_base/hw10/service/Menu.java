@@ -1,6 +1,6 @@
 package ua.lits.java_base.hw10.service;
 
-public class service {
+public class Menu {
     private static final int GET_USER_INFO = 1;
 
     private UserService userService = new UserService();

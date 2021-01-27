@@ -7,6 +7,10 @@ import java.util.stream.Collectors;
 
 public class MapUtils {
     public static void main(String[] args) {
+
+//        1. Зробити це завдання з допомогою stream. створити MapUtils клас у якому є метод який прийматиме мапу ,
+//        і метод має поміняти місцями всі ключі і занчення місцями( значення стає ключом, ключ -> значенням).
+
         Map<String, Integer> map = new LinkedHashMap<>();
         map.put("a", 1);
         map.put("b", 2);
