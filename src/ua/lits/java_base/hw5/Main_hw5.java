@@ -15,7 +15,7 @@ public class Main_hw5 {
         SpaceX2Mars spaceX2Mars = new SpaceX2Mars(new Date(2021, 11,1), 6, true,
                  "Mars", 10);
 
-        spaceX1.show();
+    spaceX1.show();
         spaceX1c.show();
         spaceX2.show();
         spaceX2c.show();
