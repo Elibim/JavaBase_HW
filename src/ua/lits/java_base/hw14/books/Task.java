@@ -2,6 +2,7 @@ package ua.lits.java_base.hw14.books;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Task {
 //    2. Створити класс Task який буде мати такі поля:
@@ -42,5 +43,18 @@ public class Task {
 
     public void setTags(List<String> tags) {
         this.tags = tags;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Task task = (Task) o;
+        return title.equals(task.title);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title);
     }
 }

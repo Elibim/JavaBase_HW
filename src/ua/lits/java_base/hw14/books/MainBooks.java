@@ -95,6 +95,8 @@ public class MainBooks {
                 .count();
         System.out.println(t);
 
+
+
         System.out.println("3. Знайти title усіх прочитаних (DONE) тасків і відсортувати по даті");
         tasks.stream()
                 .sorted((i1, i2) -> i1.creationDate.compareTo(i2.creationDate))
@@ -109,9 +111,9 @@ public class MainBooks {
 
         System.out.println("5. Знайти усі таски з унікальним title");
         tasks.stream()
-                .map(task -> task.getTitle())
                 .distinct()
-                .forEach(e -> System.out.println(e));
+                .forEach(e -> System.out.println(e.getTitle() + " " + e.creationDate));
+
 
         System.out.println("6. Знайти топ 10 тасків відсортованих за датою створення");
         tasks.stream()
@@ -132,6 +134,7 @@ public class MainBooks {
                 .distinct()
                 .forEach(e -> System.out.println(e));
 
+
         System.out.println("9. Знайти всі прочитані (DONE) таски які мають tag 'Book' (AudioBook)");
         long a = tasks.stream()
                 .filter(task -> task.type.equals(TypeEnum.DONE))
@@ -140,6 +143,7 @@ public class MainBooks {
                 .filter(tags -> tags.equals("AudioBook"))
                 .count();
         System.out.println(a);
+
 
 //        System.out.println("try");
 //        tasks.stream()
@@ -152,6 +156,8 @@ public class MainBooks {
         System.out.println("10. Сторити Саммарі з тайтлом для свіх тасків");
         tasks.stream()
                 .forEach(e -> System.out.println(e.getTitle()));
+
+
 
 //        "4. Знайти всі унікальні title"/"5. Знайти усі таски з унікальним title" DIFFERENT?
     }
