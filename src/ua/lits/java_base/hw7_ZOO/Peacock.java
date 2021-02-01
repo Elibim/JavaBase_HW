@@ -32,4 +32,9 @@ public class Peacock implements Bird {
     public void feederFeed() {
         System.out.println(feeder() + " is " + feeding + " " + sort() + ".");
     }
+
+    @Override
+    public void willEat() {
+        System.out.println("Hurray! " + sort() + " are " + food());
+    }
 }

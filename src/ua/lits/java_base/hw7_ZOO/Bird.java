@@ -5,4 +5,5 @@ public interface Bird {
     int noOfAnimal();
     FoodType food();
     FeederName feeder();
+    public void willEat();
 }

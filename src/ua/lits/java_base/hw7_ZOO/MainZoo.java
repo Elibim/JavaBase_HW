@@ -1,5 +1,12 @@
 package ua.lits.java_base.hw7_ZOO;
 
+import javax.crypto.spec.PSource;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Scanner;
+
 public class MainZoo {
     public static void main(String[] args) {
 //  Створити консольну програму зоопарк.
@@ -98,5 +105,41 @@ public class MainZoo {
         Employees accountant = new Employees("Accountant", Action.COUNTING);
         accountant.doSomething();
         accountant.income();
+
+        System.out.println("\n***********************");
+        System.out.println("Please enter No of food for animal you want to feed:" +
+                "\n11 meat for Alpaca" +
+                "\n12 meat for Wolf +" +
+                "\n13 meat for Hedgehog +" +
+                "\n14 meat for Peacock +" +
+                "\n15 meat for Toucan" +
+                "\n16 meat for Eagle +" +
+                "\n21 mix food for Alpaca" +
+                "\n22 mix food for Wolf" +
+                "\n23 mix food for Hedgehog +" +
+                "\n24 mix food for Peacock +" +
+                "\n25 mix food for Toucan" +
+                "\n26 mix food for Eagle" +
+                "\n31 plants for Alpaca +" +
+                "\n32 plants for Wolf" +
+                "\n33 plants for Hedgehog +" +
+                "\n34 plants for Peacock +" +
+                "\n35 plants for Toucan +" +
+                "\n36 plants for Eagle");
+
+        try {
+            Scanner feedingAnimals = new Scanner(System.in);
+            int foodAnimal = feedingAnimals.nextInt();
+            ArrayList<Integer> list = new ArrayList<>(List.of(12,13,14,16,23,24,31,33,34,35));
+                if (list.contains(foodAnimal)) {
+                    throw new Exception("Hurray! Now animal is not hungry!");
+                }
+                else {
+                    throw new Exception("This animal is not eating such a food or you insert wrong number!");
+                }
         }
+        catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
 }
