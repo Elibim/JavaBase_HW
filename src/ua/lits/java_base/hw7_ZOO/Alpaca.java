@@ -21,6 +21,4 @@ public class Alpaca extends Mammals {
     FeederName feeder() {
         return FeederName.Bob;
     }
-
-//    alpacaEats()
 }
